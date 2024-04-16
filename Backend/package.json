@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Procrastination web based solution",
+  "main": "index.js",
+  "scripts": {
+    "start": "node Index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suraj-kumar00/ProActive.git"
+  },
+  "keywords": [
+    "Procrastination",
+    "ProActive",
+    "Productive"
+  ],
+  "author": "Suraj Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Suraj-kumar00/ProActive/issues"
+  },
+  "homepage": "https://github.com/Suraj-kumar00/ProActive#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.0"
+  }
+}
