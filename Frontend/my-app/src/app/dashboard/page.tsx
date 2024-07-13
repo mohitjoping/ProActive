@@ -5,7 +5,9 @@ type Props = {}
 
 export default function index({}: Props) {
   return (
-    <Button variant="outline">Button</Button>
+    <div className=' flex justify-center items-center'>
+    <Button className='flex justify-centeritems-center'  variant="outline">Button</Button>
+</div>
 
   )
 }

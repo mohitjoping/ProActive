@@ -17,6 +17,15 @@ const config = {
       },
     },
     extend: {
+      
+      backgroundImage: {
+        'before': "url('/BeforeProactive.svg')",
+        'after': "url('/AfterProactive.svg')",
+        'Man-walking': "url('/ManWalkingOnStairs.svg')",
+        'Man-Standing': "url('/Man_With_Standing_Table.svg')",
+        
+        'circle': "url('/cirlce.svg')",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
