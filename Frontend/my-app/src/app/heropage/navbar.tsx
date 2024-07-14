@@ -1,6 +1,6 @@
 import React from "react"; // Add this line
-
-import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { Button, buttonVariants } from "@/components/ui/button";
 import {
     Briefcase,
     DiamondPlus,
@@ -10,6 +10,7 @@ import {
     House,
     Mail,
   } from "lucide-react";
+import { cn } from "@/lib/utils";
 type Props = {};
 
 export default function NavBar({}: Props) {
@@ -28,14 +29,26 @@ export default function NavBar({}: Props) {
             <Button className="flex justify-center items-center " variant="noline">Blogs</Button>
         
             
-            <Button
-              className="flex justify-center items-center gap-2"variant="outline">
-              LOGIN
-            </Button>
-            <Button
-              className="flex justify-center items-center gap-2"variant="default">
-              SIGN-UP
-            </Button>
+            
+              <Link
+              href="/login-page"
+              className={cn(
+                buttonVariants({ variant: "outline" }),
+                "right-0 top-0 "
+              )}
+            >
+              Login
+            </Link>
+            <Link
+              href="/sign-up"
+              className={cn(
+                buttonVariants({ variant: "default" }),
+                "right-0 top-0 "
+              )}
+            >
+              SIGNUP
+            </Link>
+          
           </div>
         </div>
       

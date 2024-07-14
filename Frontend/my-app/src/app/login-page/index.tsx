@@ -29,21 +29,9 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
     backgroundPosition: "25% 25%",
   }}>
 
-    <div className={cn("grid gap-5", className)} {...props}>
+    <div className={cn("grid gap-6", className)} {...props}>
       <form onSubmit={onSubmit}>
         <div className="grid gap-2">
-        <div className="grid gap-1">
-          <Label htmlFor="name">Full Name</Label>
-            <Input
-              id="name"
-              placeholder="John Doe"
-              type="text"
-              autoCapitalize="words"
-              autoComplete="current-password"
-              autoCorrect="off"
-              disabled={isLoading}
-            />
-          </div>
           <div className="grid gap-1">
           <Label className="not-sr-only" htmlFor="email">Email</Label>
             <Input
@@ -68,12 +56,12 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
               disabled={isLoading}
             />
           </div>
-         
-          <Button  className="flex justify-center items-center mt-9 ml-9 mr-9 mb-7 " disabled={isLoading}>
+          
+          <Button  className="flex justify-center items-center mt-9 ml-9 mr-9 mb-7" disabled={isLoading}>
             {isLoading && (
               <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
             )}
-            SIGN-UP
+            LOGIN
           </Button>
         </div>
       </form>
@@ -87,7 +75,6 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
           </span>
         </div>
       </div>
-      <div className="flex flex-row justify-center items-center gap-10">
       <Button className="flex " variant="outline" type="button" disabled={isLoading}>
         {isLoading ? (
           <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
@@ -104,7 +91,6 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
         )}{" "}
         Google
       </Button>
-      </div>
     </div>
   </main>
   )
