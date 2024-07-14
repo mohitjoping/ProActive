@@ -1,13 +1,10 @@
-import React from 'react'
-import { Button } from "@/components/ui/button"
+import React from "react"; // Add this line
+import DashboardContainer from "./dashboardContainer";
+type Props = {};
 
-type Props = {}
-
-export default function index({}: Props) {
+export default function Page({}: Props)  {
   return (
-    <div className=' flex justify-center items-center'>
-    <Button className='flex justify-centeritems-center'  variant="outline">Button</Button>
-</div>
-
+    
+    <DashboardContainer />
   )
 }
