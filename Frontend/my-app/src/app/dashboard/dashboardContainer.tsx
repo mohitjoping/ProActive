@@ -39,9 +39,9 @@ const DashboardLayout: React.FC = () => {
           </div>
 
           {/* My Productivity */}
-          <div className="flex rounded-md bg-violet-100 p-4">
-            <MyProductivity />
-          </div>
+          {/* <div className="flex rounded-md bg-violet-100 p-4"> */}
+            {/* <MyProductivity /> */}
+          {/* </div> */}
         </div>
       </div>
     </div>

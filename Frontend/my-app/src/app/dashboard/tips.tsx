@@ -28,7 +28,7 @@ const Tips: React.FC = () => {
   };
 
   return (
-    <div className="tips-card p-2  border rounded-md shadow-md min-w-[900px] h-48 relative bg-violet-200">
+    <div className="tips-card p-2  border rounded-md shadow-md min-w-[900px] h-[150px] relative bg-violet-200">
       <h1 className="text-3xl font-bold text-left  text-violet-950  rounded-xl mb-4">Tips</h1>
       <h2 className="text-lg font-semibold text-violet-950 mb-2">{tip.title}</h2>
       <p className="text-gray-700 mb-4 overflow-wrap-break-word text-xs">{tip.content}</p>

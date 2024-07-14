@@ -62,8 +62,8 @@ const PomodoroTimer: React.FC = () => {
   };
 
   return (
-    <div className="p-2 bg-violet-200  border border-violet-950 rounded-md shadow-md min-w-[900px] min-h-[100px] max-h-[100px] relative overflow-hidden">
-      <div className="text-9xl mx-32 font-extrabold text-violet-950">
+    <div className=" bg-violet-200  border border-violet-950 rounded-md shadow-md min-w-[900px] min-h-[29vh] max-h-[29vh] relative overflow-hidden p-10">
+      <div className="flex justify-center text-9xl mx-32 font-extrabold text-violet-950">
         {minutes < 10 ? `0${minutes}` : minutes}:{seconds < 10 ? `0${seconds}` : seconds}
       </div>
       <div className='flex flex-col md:flex-row justify-center md:justify-between items-center'>

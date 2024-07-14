@@ -10,10 +10,11 @@ type Props = {};
 
 export default function QuickActions({}: Props) {
   return (
-    <div className='border  border-violet-950 min-w-[900px]' >
+    <div className='border  border-violet-950 min-w-[900px] max-h-[150px]' >
         <ResizablePanelGroup
       direction="horizontal"
       className="max-w-[900px] h-[100px] bg-violet-200"
+
     >
       <ResizablePanel  defaultSize={50}>
         <div className="flex h-[200px] ] items-center justify-center p-6 bg-violet-200">

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { LogIn } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -24,7 +25,11 @@ export default function HeroScreen({}: Props) {
             </p>
           </div>
           <div className="flex flex-col justify-center items-center p-14">
-            <Button>Get Started <LogIn /> </Button>
+          <Link href="/dashboard" passHref>
+      <Button>
+        Get Started <LogIn />
+      </Button>
+    </Link>
           </div>
         </div>
       </section>

@@ -73,7 +73,7 @@ const Todo: React.FC = () => {
   };
 
   return (
-    <div className="hide-scrollbar mx-3 md:container md:ml-2 rounded-xl p-5  bg-violet-200 min-h-[1400px] max-h-[80vh] min-w-8 overflow-hidden overflow-y-scroll self-center">
+    <div className="hide-scrollbar mx-3 md:container md:ml-2 rounded-xl p-5  bg-violet-200 min-h-[675px] max-h-[80vh] min-w-8 overflow-hidden overflow-y-scroll self-center">
       <div className="addTodo my-5 flex flex-col gap-4">
         <h1 className="text-3xl font-bold text-violet-950">TASK</h1>
         <div className="flex">

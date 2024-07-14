@@ -7,13 +7,16 @@ const MyProductivity: React.FC = () => {
       <h1 className="myproductivity text-violet-800 ml-8 font-semibold text-xl mt-5">
         My Productivity
       </h1>
-      <div className="task-completed h-20 w-19 bg-violet-800 my-2 rounded-xl">
+      <div className=" flex flex-row ">
+        <div className="task-completed h-20 w-19 bg-violet-800 my-2 rounded-xl">
 
-      </div>
+        </div>
       <div className="time-duration h-20 w-19 bg-violet-800 my-2 rounded-xl">
         
+        </div>
+        <div className="pi-chart"></div>
       </div>
-      <div className="pi-chart"></div>
+      
       <button className="w-19 bg-violet-800 mx-1 rounded-full hover:bg-violet-950 disabled:bg-violet-500 p-4 py-2 text-sm font-bold text-white">
         Daily Routine
       </button>
